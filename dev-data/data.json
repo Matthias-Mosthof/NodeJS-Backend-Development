@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "userName": "Matthias",
+    "description": "Passionate dev on the lookout",
+    "from": "Crailsheim",
+    "profilePhoto": false
+  },
+  {
+    "id": 2,
+    "userName": "Marc",
+    "description": "Minim consequat id ea cillum duis deserunt minim elit et pariatur adipisicing occaecat nulla nostrud.",
+    "from": "New York",
+    "profilePhoto": true
+  },
+  {
+    "id": 3,
+    "userName": "Steffi",
+    "description": "Sunt nostrud voluptate dolor est ea ipsum esse adipisicing culpa est occaecat laboris aliqua sunt.",
+    "from": "Berlin",
+    "profilePhoto": false
+  },
+  {
+    "id": 4,
+    "userName": "Nik",
+    "description": "Ea dolor magna nisi minim do laboris.",
+    "from": "Buxtehude",
+    "profilePhoto": true
+  }
+]

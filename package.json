@@ -1,0 +1,14 @@
+{
+  "name": "firstnodeproject",
+  "version": "1.0.0",
+  "description": "This is my very own Node Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Matthias Mosthof",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
