@@ -20,3 +20,15 @@
 
 - nodemon
   -> to not start and reload server with every change manually
+
+- dynamic fileSystem Variable "`${__dirname}`"
+  -> to be more flexible with filelocations
+
+## Progress
+
+with tools used above:
+
+- Created localhost Server on Port 8000
+- Created async Routing
+- Created fallback if Route doesnt exists
+- Server Listener which reacts to every change made
