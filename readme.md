@@ -24,6 +24,8 @@
 - dynamic fileSystem Variable "`${__dirname}`"
   -> to be more flexible with filelocations
 
+- HTML templates with placeholders, replaced with replace function
+
 ## Progress
 
 with tools used above:
@@ -32,3 +34,4 @@ with tools used above:
 - Created async Routing
 - Created fallback if Route doesnt exists
 - Server Listener which reacts to every change made
+- Rendering Backend Data on Overview Page
