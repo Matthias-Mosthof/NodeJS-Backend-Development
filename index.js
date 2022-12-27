@@ -1,11 +1,15 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
+const replaceTemplate = require('./modules/replaceTemplate');
 
 ///////////////////////////////
 // SERVER
 
 const tempOverview = fs.readFileSync(`${__dirname}/templates/overview-template.html`, 'utf-8');
+const tempCard = fs.readFileSync(`${__dirname}/templates/cards-template.html`, 'utf-8');
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`);
+const dataObj = JSON.parse(data);
 
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
@@ -13,7 +17,10 @@ const server = http.createServer((req, res) => {
   // Overview Page
   if (pathname === '/' || pathname === '/overview') {
     res.writeHead(200, { 'content-type': 'text/html' });
-    res.end(tempOverview);
+
+    const usersHtml = dataObj.map((el) => replaceTemplate(tempCard, el)).join('');
+    const output = tempOverview.replace('{%USER_CARDS%}', usersHtml);
+    res.end(output);
   } else if (pathname === '/userdetails') {
     res.end('this is the userdetails Page');
   } else {

@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
-        font-size: 40px;
+      .wrapper {
+        font-size: 35px;
         color: blue;
         text-align: center;
+        margin-block: 80px;
+        padding: 20px;
+      }
+
+      .one-user {
+        margin: 20px;
       }
     </style>
   </head>
   <body>
     <main>
-      <div>{%USERNAME%}</div>
-      <div>{%FROM%}</div>
-      <div>{%DESCRIPTION%}</div>
-      <div>{%PROFILEPHOTO%}</div>
-      <div>{%ID%}</div>
+      <div class="wrapper">{%USER_CARDS%}</div>
     </main>
   </body>
 </html>
